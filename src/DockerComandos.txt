@@ -1,0 +1,26 @@
+                        >> COMADOS MAS USADOS EN DOCKER <<
+
+IMPORTANTE:    { TODOS LAS COMANDOS SE DEBEN DE EJECITAR EN MINUSCULA }
+
+>> Repo del "curso" https://github.com/pablokbs/peladonerd/tree/master/docker/12
+
+
+> DOCKER RUN: Ejectuta un conterdor a partir de una imagen EJ: docker run "nombre de la imagen", pero tambien si no esta la imagenen el Sistema Operativo (OS) la descarga.
+> DOCKER PULL: Descarga la imagen pero no la ejecuta EJ: docker pull postgres.
+> DOCKER IMAGES: Permite ver todas las images disponibles en la maquina.
+> DOCKER PS: Muestra los contenerdores que estan corriendo.
+> DOCKER PS -A: Muestra las ultimas images que coorieron hace un tiempo.
+> DOCKER START {CONTAINER ID}: Si se paro la ejecucion de una imagen y se quiere volver a correr ese contenedor, para recuperar datos, este se ejecuta en segundo plano. Esto no es recomendable. 
+> DOCKER LOGS {CONTAINER ID}: Para la salidad del contenedor selecionado, Esto muestra la salidad pero el contenerdor no se queda escuchando.
+> DOCKER LOGS -F {CONTAINER ID}: Igual que el comando anterior pero esta ves si queda escuchando.
+> DOCKER EXEC: Ejecuta un comando dentro de un conterdor que ya esta corriendo. Ej: docker exec -it 61415bbd5399 sh
+-it: el -i = Seccion interactiva, el t = sumila un terminal.
+El 61415bbd5399 = es el id de la imagen.
+El sh = terminal de shell, con sus respectivos comandos
+> DOCKER STOP {CONTAINER ID} = Detiene la ejacucion del conterdor Ej: DOCKER STOP 61415bbd5399 
+> DOCKER RUN -D postgres: Permite ejecutar un contenedor en background "segundo plano" 
+
+
+                                        >> videos utiles <<
+DOCKER 2021 - De NOVATO a PRO! (CURSO COMPLETO) => https://www.youtube.com/watch?v=CV_Uf3Dq-EU
+Docker & Nodejs. Aplicación de Nodejs en Docker Container => https://www.youtube.com/watch?v=iLlmm0L-VpQ
